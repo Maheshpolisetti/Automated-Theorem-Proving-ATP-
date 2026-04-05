@@ -17,7 +17,7 @@ To achieve this, the system structurally manipulates the state-space:
 ## Algorithmic Foundation
 The core theoretical engine behind the solver relies strictly on **First-Order Logic Resolution Refutation**. Theorem proving inherently requires verifying if a conclusion functionally follows from a set of axioms. Resolution refutation accommodates this structure flawlessly by attempting to prove that the negation of the hypothesis is structurally inconsistent with the Knowledge Base.
 
-### Managing Combinatorial Complexity (Optimizations)
+### Optimizations
 A notorious challenge in ATP systems is the exponential combinatorial complexity of the resolution branch tree. The engine integrates multiple sophisticated heuristics and pruning methodologies to survive the expansion logic:
 
 - **Set of Support (SoS) Strategy:** Drastically restricts the search space by algorithmically enforcing that at least one of the parent clauses being resolved dynamically maps back to the negated target goal. This strictly prevents the system from aimlessly bouncing background truths off each other forever.
