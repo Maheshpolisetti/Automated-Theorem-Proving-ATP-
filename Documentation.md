@@ -2,6 +2,11 @@
 
 The project includes a fully robust graphical interface designed to simplify the evaluation process and provide an intuitive visualization of the resulting proof paths. 
 
+Make sure matplotlib and networkx are insatlled on your machine. If not, run the following to install them.
+```bash
+pip install matplotlib networkx
+```
+
 To launch the graphical interface, run:
 ```bash
 python app_atp.py
